@@ -1,0 +1,16 @@
+# virtual environment and Python cache
+.venv/
+__pycache__/
+*.pyc
+
+# local databases (rebuilt by the pipeline)
+*.duckdb
+*.duckdb.wal
+
+# raw DfT files are never committed
+data/raw/*.csv
+
+# secrets and OS files
+.env
+.DS_Store
+Thumbs.db
